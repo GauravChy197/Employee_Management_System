@@ -1,25 +1,24 @@
 import React from 'react'
+import AcceptedTask from '../TaskList/AcceptedTask'
+import NewTask from '../TaskList/NewTask'
+import CompleteTask from '../TaskList/CompleteTask'
+import FailedTaks from '../TaskList/FailedTaks'
 
-const TaskList = () => {
+const TaskList = ({data}) => {
+        
     return (
         <div id='list' className='mt-15  h-[50%] flex  flex-nowrap  overflow-auto items-center  gap-5'>
-            <div id='task' className='bg-blue-400 rounded-2xl h-[80%] w-90 shrink-0 px-5 py-8'>
-                <div className='flex justify-between items-center mb-5'>
-                    <h2 className='text-xl font-semibold bg-red-800 rounded px-3 py-1'>High</h2>
-                    <h3 className='text-sm font-medium'>Oct-24</h3>
-                </div>
-                <h1 className='text-2xl font-semibold mb-3'>Complete react</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi iste itaque fugiat! Accusantium voluptatibus in quisquam, similique culpa cupiditate!</p>
-            </div>
-            <div id='task' className='bg-blue-400 rounded-2xl h-[80%] w-90 shrink-0 px-5 py-8 overflow-auto'>
-                <div className='flex justify-between items-center mb-5'>
-                    <h2 className='text-xl font-semibold bg-red-800 rounded px-3 py-1'>High</h2>
-                    <h3 className='text-sm font-medium'>Oct-24</h3>
-                </div>
-                <h1 className='text-2xl font-semibold mb-3'>Complete react</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, a. Minus aut quo explicabo quae magni maiores dolore blanditiis quibusdam quaerat, veritatis ipsum repellendus aliquam iure excepturi? Numquam harum hic, laudantium eius saepe quas quasi enim, odio quis est assumenda.</p>
-            </div>
-                         
+            {data.tasks.map((e,idx)=>{
+            if(e.active){
+                return<AcceptedTask key={idx} data = {e} />
+            }if(e.newTask){
+                return <NewTask key={idx} data = {e} />
+            } if (e.failed){
+                return <FailedTaks key={idx} data = {e} />
+            }if(e.completed){
+                return<CompleteTask key={idx} data = {e} />
+            }             
+            })}
         </div>
     )
 }

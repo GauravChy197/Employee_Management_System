@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
-const Login = () => {
+
+const Login = ({handelLogin}) => {
     const submitHandler = (e) => {
         e.preventDefault();
+        handelLogin(email,password)
         setEmail('')
-        setPass('')
+        setPassword('')
     }
-
+    
+    
+    
     const [email, setEmail] = useState('')
-    const [pass, setPass] = useState('')
+    const [password, setPassword] = useState('')
 
     return (
         <div className='flex justify-center items-center bg-black h-screen text-white'>
@@ -28,9 +32,9 @@ const Login = () => {
                                     type="email"
                                     placeholder='email address' />
                                 <input
-                                    value={pass}
+                                    value={password}
                                     onChange={(e) => {
-                                        setPass(e.target.value)
+                                        setPassword(e.target.value)
                                     }}
                                     required
                                     className='w-full bg-black px-3 py-2.5 rounded font-semibold outline-0'
