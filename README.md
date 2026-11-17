@@ -51,4 +51,6 @@ Use the following credentials to test both Admin and Employee roles in the live 
    git clone [https://github.com/GauravChy197/Employee_Management_System.git](https://github.com/GauravChy197/Employee_Management_System.git)
    cd Employee_Management_System
 
+Install dependencies:
+npm install
    
