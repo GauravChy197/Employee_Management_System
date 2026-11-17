@@ -47,10 +47,48 @@ Use the following credentials to test both Admin and Employee roles in the live 
 ## Getting Started (Local Setup)
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/GauravChy197/Employee_Management_System.git](https://github.com/GauravChy197/Employee_Management_System.git)
-   cd Employee_Management_System
+   `git clone https://github.com/GauravChy197/Employee_Management_System.git`
+   `cd Employee_Management_System`
 
-Install dependencies:
-npm install
-   
+2. **Install dependencies:**
+   `npm install`
+
+3. **Start the development server:**
+   `npm run dev`
+
+4. Open the local URL shown in your terminal (usually `http://localhost:5173`).
+
+## Project Structure
+
+```text
+src/
+├── Components/
+│   ├── Auth/
+│   │   └── Login.jsx
+│   ├── Dashboard/
+│   │   ├── AdminDashobard.jsx
+│   │   └── EmployeeDashboard.jsx
+│   ├── Others/
+│   │   ├── AllTasks.jsx
+│   │   ├── CreateTask.jsx
+│   │   ├── Header.jsx
+│   │   └── TaskNumber.jsx
+│   └── TaskList/
+│       ├── AcceptedTask.jsx
+│       ├── CompleteTask.jsx
+│       ├── FailedTaks.jsx
+│       ├── NewTask.jsx
+│       └── TaskList.jsx
+├── Context/
+│   └── AuthProvider.jsx
+├── Utils/
+│   └── LocalStorage.jsx
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Live Demo
+
+Check out the live application here: **[Live Demo Link](https://employee-management-system-nine-taupe.vercel.app/)**
