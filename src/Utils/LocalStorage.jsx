@@ -362,4 +362,3 @@ export const saveEmployees = (employees) => {
     localStorage.setItem('employees', JSON.stringify(employees))
 }
 
-// localStorage.clear()
