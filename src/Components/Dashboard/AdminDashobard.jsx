@@ -8,7 +8,7 @@ const AdminDashobard = (props) => {
         
 
     return (
-        <div className='p-5 bg-[#1c1c1c] text-white h-screen w-full '>
+        <div className='p-5 bg-[#1c1c1c] text-white  w-full '>
             <Header changeUser = {props.changeUser} />
             <CreateTask />
             <AllTasks />
