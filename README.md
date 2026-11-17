@@ -15,17 +15,17 @@ A clean, responsive Employee & Task Management web application built with React 
 * **Workflow Management:** Accept newly assigned tasks and mark active tasks as either **Completed** or **Failed**, updating statistics dynamically.
 
 ### Core Functionality
-* **Role-Based Authentication:** Separate views and permissions for Admin and Employee logins[cite: 2].
-* **State Persistence:** Uses React `useContext` for global state management and `localStorage` so tasks and session data persist across page refreshes[cite: 2, 9].
+* **Role-Based Authentication:** Separate views and permissions for Admin and Employee logins.
+* **State Persistence:** Uses React `useContext` for global state management and `localStorage` so tasks and session data persist across page refreshes.
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** React (Hooks, Context API)[cite: 2, 3]
-* **Styling:** Tailwind CSS[cite: 4, 5]
+* **Frontend:** React (Hooks, Context API)
+* **Styling:** Tailwind CSS
 * **Build Tool:** Vite
-* **Storage:** Browser `localStorage`[cite: 2, 9]
+* **Storage:** Browser `localStorage`
 
 ---
 
@@ -35,7 +35,7 @@ Use the following credentials to test both Admin and Employee roles in the live 
 
 | Role | Email | Password |
 | :--- | :--- | :--- |
-| **Admin** | `admin@1.com`[cite: 2] | `123`[cite: 2] |
+| **Admin** | `admin@1.com` | `123` |
 | **Employee 1** | `emp1@example.com` | `123` |
 | **Employee 2** | `emp2@example.com` | `123` |
 | **Employee 3** | `emp3@example.com` | `123` |
@@ -48,5 +48,7 @@ Use the following credentials to test both Admin and Employee roles in the live 
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-   cd your-repo-name
+   git clone [https://github.com/GauravChy197/Employee_Management_System.git](https://github.com/GauravChy197/Employee_Management_System.git)
+   cd Employee_Management_System
+
+   
